@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 配置axios
+import Axios from 'axios'
+
 //引入CSS样式
 import './assets/css/base.css'
 import './assets/css/checkout.css'
@@ -15,6 +18,8 @@ import NavHeader from '@/components/NavHeader'
 Vue.component(NavHeader.name,NavHeader)
 import NavFooter from '@/components/NavFooter'
 Vue.component(NavFooter.name,NavFooter)
+import NavBread from '@/components/NavBread'
+Vue.component(NavBread.name,NavBread)
 
 Vue.config.productionTip = false
 

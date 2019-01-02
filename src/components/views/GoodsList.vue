@@ -1,14 +1,9 @@
 <template>
     <div>
       <nav-header></nav-header>
-      <div class="nav-breadcrumb-wrap">
-        <div class="container">
-          <nav class="nav-breadcrumb">
-            <a href="/">Home</a>
-            <span>Goods</span>
-          </nav>
-        </div>
-      </div>
+      <nav-bread>
+        <span slot="bread">Goods</span>
+      </nav-bread>
       <div class="accessory-result-page accessory-page">
         <div class="container">
           <div class="filter-nav">
