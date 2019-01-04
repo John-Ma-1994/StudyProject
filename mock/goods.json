@@ -1,24 +1,42 @@
 {
   "status":"0",
   "msg":"",
-  "result":[
+  "message":[
     {
       "productId":"10001",
       "productName":"音响",
-      "productPrice":199,
-      "productImg":"1.jpg"
+      "productPrice":"199",
+      "productImg":"../../static/1.jpg"
     },
     {
       "productId":"10002",
-      "productName":"手机",
-      "productPrice":1999,
-      "productImg":"2.jpg"
+      "productName":"蓝牙耳机",
+      "productPrice":"299",
+      "productImg":"../../static/2.jpg"
     },
     {
       "productId":"10003",
-      "productName":"电脑",
-      "productPrice":6999,
-      "productImg":"3.jpg"
+      "productName":"头戴耳机",
+      "productPrice":"399",
+      "productImg":"../../static/3.jpg"
+    },
+    {
+      "productId":"10004",
+      "productName":"zczxczc",
+      "productPrice":"199",
+      "productImg":"../../static/4.jpg"
+    },
+    {
+      "productId":"10005",
+      "productName":"fasdas",
+      "productPrice":"299",
+      "productImg":"../../static/5.jpg"
+    },
+    {
+      "productId":"10006",
+      "productName":"asdasd",
+      "productPrice":"399",
+      "productImg":"../../static/6.jpg"
     }
   ]
 }

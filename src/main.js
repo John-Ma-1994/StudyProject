@@ -6,6 +6,13 @@ import router from './router'
 
 // 配置axios
 import Axios from 'axios'
+Vue.prototype.$axios = Axios
+
+//配置图片懒加载
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload, {
+  loading: "../static/loading/loading-bars.svg"
+})
 
 //引入CSS样式
 import './assets/css/base.css'

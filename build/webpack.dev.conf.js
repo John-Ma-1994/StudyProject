@@ -12,14 +12,9 @@ const portfinder = require('portfinder')
 
 const express = require('express')
 const app = express()//请求server
+var goodsData = require('../mock/goods.json')
 var router = express.Router()
-var goodsData = require('./../mock/goods.json')
-/*router.get("/goods",function (req,res,next) {
-  res.json(goodsData)
-})*/
-app.use(router)
-/*var apiRoutes = express.Router()
-app.use('/api', apiRoutes)*/
+app.use(router)  //通过路由请求数据
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -54,12 +49,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     watchOptions: {
       poll: config.dev.poll,
     },
+    //
     before(app) {
       app.get('/goods', (req, res) => {
-        res.json({
-          errno: 0,
-          data: goodsData
-        })
+        res.json(goodsData)  //接口返回json数据，上面配置的数据appData就赋值给data请求后调用
       })
     }
   },
